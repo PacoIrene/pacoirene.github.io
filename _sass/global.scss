@@ -65,6 +65,22 @@ nav {
   z-index: 10;
 }
 
+nav.device a.logo,
+nav.normal a.logo {
+  font-family: Moon Dance, Arvo, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav.normal a.logo {
+  padding-bottom: 1rem;
+}
+
+nav.device a.logo {
+  color: white;
+  padding-left: 1rem;
+}
+
 nav.device {
   flex-direction: row;
   justify-content: space-between;
@@ -149,12 +165,13 @@ ul#device-menu-list {
 
 .content {
   height: 100%;
-  font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  font-family: 'Noto Serif SC', Arial, Helvetica, sans-serif;
   .common-content {
     padding: 2rem;
   }
   #poetry {
+    font-family: Arvo, Arial, Helvetica, sans-serif;
     margin-top: 170px;
     display: flex;
     justify-content: center;
