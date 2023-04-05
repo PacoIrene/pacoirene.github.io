@@ -1,0 +1,55 @@
+<head>
+  {% if page.title %}
+  <title>{{page.title}}</title>
+  {% else %}
+  <title>Mark</title>
+  {% endif %}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#222" />
+  <meta name="author" content="PacoIrene" />
+  <meta name="renderer" content="webkit" />
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Hurricane&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Serif+SC:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+  <!-- Favicon -->
+  <link href="{{ "/assets/favicon.ico" | relative_url }}" rel="shortcut icon"/>
+  <link rel="apple-touch-icon" sizes="48x48" href="{{
+  "/assets/touch-icon/48.png" | relative_url }}"> <link rel="apple-touch-icon"
+  sizes="96x96" href="{{ "/assets/touch-icon/92.png" | relative_url }}"> <link
+  rel="apple-touch-icon" sizes="192x192" href="{{ "/assets/touch-icon/192.png" |
+  relative_url }}">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="{{ "/assets/manifest.json" | relative_url }}">
+
+  <!-- Analytics-->
+  {% if jekyll.environment == 'production' %} {% include analytics.html %} {%
+  include jsError.html %} {% endif %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Add Nav Active Status
+      const pathName = location.pathname.split("/")[1];
+      const pathMap = {
+        "": "home",
+        memories: "memory",
+        memory: "memory",
+        portfolio: "portfolio",
+        about: "about",
+      };
+      if (pathMap[pathName]) {
+        const node = document.getElementById("nav-" + pathMap[pathName]);
+        if (node) {
+          node.classList.add("active");
+        }
+      }
+    });
+  </script>
+</head>

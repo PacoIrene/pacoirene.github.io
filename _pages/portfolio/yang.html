@@ -1,0 +1,33 @@
+---
+layout: photos
+title: "Fafaia"
+permalink: /portfolio/yang
+images:
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728462812/films/yang/4_oupclj.jpg
+    height: 674.22
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728462812/films/yang/5_ji4lq2.jpg
+    height: 674.30
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728462811/films/yang/1_cj1jmx.jpg
+    height: 674.30
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728462811/films/yang/3_ylw4hm.jpg
+    height: 674.30
+---
+
+<div class="common-content">
+  <h4 class="portfolio-title">{{ page.title }}</h4>
+  <div class="photo-gallery">
+    {% for image in page.images %}
+    <div class="photo-gallery-item">
+      <div class="photo-gallery-item-container">
+        <canvas
+          class="image-placeholder"
+          width="550"
+          height="{{image.height}}"
+          style="background-color: rgba(221, 220, 220, 0.7)"
+        ></canvas>
+        <img src="{{ image.image_path }}" class="lazyload img-lazyload" />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

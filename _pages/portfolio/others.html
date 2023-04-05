@@ -1,0 +1,42 @@
+---
+layout: photos
+title: "Retrospect"
+permalink: /portfolio/others
+images:
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466646/films/others/5_lz9ab1.jpg
+    height: 646.80
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466650/films/others/10_iageng.jpg
+    height: 679.30
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466646/films/others/4_hlvl8v.jpg
+    height: 679.36
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466648/films/others/6_nyyjf7.jpg
+    height: 679.36
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466648/films/others/8_pzixje.jpg
+    height: 679.41
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466649/films/others/9_o7mnfc.jpg
+    height: 665.55
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466645/films/others/3_mnihpg.jpg
+    height: 669.57
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466647/films/others/7_x7wajh.jpg
+    height: 679.42
+---
+
+<div class="common-content">
+  <h4 class="portfolio-title">{{ page.title }}</h4>
+  <div class="photo-gallery">
+    {% for image in page.images %}
+    <div class="photo-gallery-item">
+      <div class="photo-gallery-item-container">
+        <canvas
+          class="image-placeholder"
+          width="550"
+          height="{{image.height}}"
+          style="background-color: rgba(221, 220, 220, 0.7)"
+        ></canvas>
+        <img src="{{ image.image_path }}" class="lazyload img-lazyload" />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+

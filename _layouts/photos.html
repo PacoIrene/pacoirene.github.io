@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <script type="text/javascript" src="{{ "/assets/js/jquery-1.11.0.min.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/masonry.pkgd.min.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/lazysizes.min.js" | relative_url }}"></script>
+  <body>
+    {% include navigation.html %}
+    <main class="content photos-content">
+      {{ content }}
+    </main>
+    {% include masonry.html %}
+    {% include footer.html %}
+  </body>
+</html>
+

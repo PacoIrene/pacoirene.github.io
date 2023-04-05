@@ -1,0 +1,42 @@
+# Site settings
+title:          Mark
+description:    "Mark's Mood"
+url:            "https://pacoirene.github.io"
+
+# Author
+author:
+  name:         Mark Chu
+  url:          https://pacoirene.github.io
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /memory/:year-:month-:day/:title
+pagination:
+  enabled: true
+  debug: false
+  per_page: 10
+  permalink: '/:num/'
+  title: ':title'
+  sort_field: 'date'
+  sort_reverse: true
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, pacoirene.gemspec ]
+
+# Show future post
+future: true

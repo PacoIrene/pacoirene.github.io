@@ -1,0 +1,49 @@
+---
+layout: photos
+title: "The Busy Heart"
+permalink: /portfolio/xing
+images:
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466522/films/xing/1_ftjsb5.jpg
+    height: 660.79
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466524/films/xing/2_crrb72.jpg
+    height: 654.16
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466526/films/xing/4_xxhuty.jpg
+    height: 665.15
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466524/films/xing/5_b4bzfn.jpg
+    height: 665.15
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466527/films/xing/8_isifcy.jpg
+    height: 662.76
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466525/films/xing/6_dsf0ef.jpg
+    height: 654.16
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466526/films/xing/7_dfmkml.jpg
+    height: 662.37
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466532/films/xing/11_nenc2l.jpg
+    height: 665.35
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466529/films/xing/10_my85c6.jpg
+    height: 665.35
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466528/films/xing/9_fugxyw.jpg
+    height: 669.16
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466531/films/xing/12_tubouv.jpg
+    height: 661.97
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466524/films/xing/3_qwk62r.jpg
+    height: 672.82
+---
+
+<div class="common-content">
+  <h4 class="portfolio-title">{{ page.title }}</h4>
+  <div class="photo-gallery">
+    {% for image in page.images %}
+    <div class="photo-gallery-item">
+      <div class="photo-gallery-item-container">
+        <canvas
+          class="image-placeholder"
+          width="550"
+          height="{{image.height}}"
+          style="background-color: rgba(221, 220, 220, 0.7)"
+        ></canvas>
+        <img src="{{ image.image_path }}" class="lazyload img-lazyload" />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

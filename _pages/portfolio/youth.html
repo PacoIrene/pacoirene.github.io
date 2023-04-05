@@ -1,0 +1,35 @@
+---
+layout: photos
+title: "Mutability"
+permalink: /portfolio/youth
+images:
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463120/films/youth/1_ua87ge.jpg
+    height: 679.41
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463121/films/youth/4_ibp8kq.jpg
+    height: 679.41
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463120/films/youth/3_j5e10x.jpg
+    height: 679.41
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463121/films/youth/5_wnuqfm.jpg
+    height: 679.41
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463120/films/youth/2_rrnbod.jpg
+    height: 679.41
+---
+
+<div class="common-content">
+  <h4 class="portfolio-title">{{ page.title }}</h4>
+  <div class="photo-gallery">
+    {% for image in page.images %}
+    <div class="photo-gallery-item">
+      <div class="photo-gallery-item-container">
+        <canvas
+          class="image-placeholder"
+          width="550"
+          height="{{image.height}}"
+          style="background-color: rgba(221, 220, 220, 0.7)"
+        ></canvas>
+        <img src="{{ image.image_path }}" class="lazyload img-lazyload" />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

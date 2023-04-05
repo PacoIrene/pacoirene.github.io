@@ -1,0 +1,35 @@
+---
+layout: photos
+title: "The Night Journey"
+permalink: /portfolio/lele
+images:
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463291/films/lele/1_opzs9c.jpg
+    height: 668.88
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463293/films/lele/5_lkfc2c.jpg
+    height: 671.19
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463291/films/lele/2_fqpi0g.jpg
+    height: 670.98
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463292/films/lele/3_yebtgn.jpg
+    height: 666.35
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463292/films/lele/4_bqo7hi.jpg
+    height: 668.76
+---
+
+<div class="common-content">
+  <h4 class="portfolio-title">{{ page.title }}</h4>
+  <div class="photo-gallery">
+    {% for image in page.images %}
+    <div class="photo-gallery-item">
+      <div class="photo-gallery-item-container">
+        <canvas
+          class="image-placeholder"
+          width="550"
+          height="{{image.height}}"
+          style="background-color: rgba(221, 220, 220, 0.7)"
+        ></canvas>
+        <img src="{{ image.image_path }}" class="lazyload img-lazyload" />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

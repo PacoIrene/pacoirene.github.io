@@ -1,0 +1,73 @@
+<div class="overlay hidden">
+  <button class="gallery-overlay-control gallery-overlay-close">
+    <svg
+      width="25"
+      height="25"
+      viewBox="0 0 25 25"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1391 49V36.997c0-.557-.448-.997-1-.997-.556 0-1 .446-1 .997V49h-12.003c-.557 0-.997.448-.997 1 0 .556.446 1 .997 1H1389v12.003c0 .557.448.997 1 .997.556 0 1-.446 1-.997V51h12.003c.557 0 .997-.448.997-1 0-.556-.446-1-.997-1H1391z"
+        transform="rotate(45 747.37 -1631.186)"
+        fill-rule="evenodd"
+      ></path>
+    </svg>
+  </button>
+  <div class="gallery-overlay-inner"></div>
+</div>
+<script>
+  $(".photo-gallery").masonry({
+    // options
+    itemSelector: ".photo-gallery-item",
+    percentPosition: true,
+    isAnimated: true,
+    animationOptions: {
+      duration: 700,
+      easing: "linear",
+      queue: false,
+    },
+  });
+
+  (function () {
+    var resources = $(".photo-gallery-item-container img")
+      .map(function () {
+        return $(this).attr("src");
+      })
+      .get();
+
+    $(".photo-gallery-item-container").delegate(
+      "img.lazyloaded",
+      "click",
+      function () {
+        $(".overlay").removeClass("hidden");
+        $("body").css("overflow", "hidden");
+        var src = $(this).attr("src");
+        if (src) {
+          $(".gallery-overlay-inner").html(
+            '<img src="' + src + '" class="lazyload" />'
+          );
+          // Handle the resources sequence
+          var index = resources.indexOf(src);
+          resources = resources
+            .slice(index + 1)
+            .concat(resources.slice(0, index + 1));
+        }
+      }
+    );
+    $(".gallery-overlay-inner").delegate(
+      "img.lazyloaded",
+      "click",
+      function () {
+        var next = resources.shift();
+        resources.push(next);
+        $(".gallery-overlay-inner").html(
+          '<img src="' + next + '" class="lazyload" />'
+        );
+      }
+    );
+    $(".gallery-overlay-close").click(function () {
+      $(".overlay").addClass("hidden");
+      $("body").css("overflow", "auto");
+    });
+  })();
+</script>

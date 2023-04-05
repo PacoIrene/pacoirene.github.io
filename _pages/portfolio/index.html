@@ -1,0 +1,55 @@
+---
+layout: photos
+title: "Portfolio"
+author: "Mark Chu"
+permalink: /portfolio
+images:
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466526/films/xing/7_dfmkml.jpg
+    path: /portfolio/xing
+    title: The Busy Heart
+    height: 662.37
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463292/films/lele/3_yebtgn.jpg
+    path: /portfolio/lele
+    title: The Night Journey
+    height: 666.35
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463207/films/kele/1_sje3ng.jpg
+    path: /portfolio/kele
+    title: The Way That Lovers Use
+    height: 665.32
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466650/films/others/10_iageng.jpg
+    path: /portfolio/others
+    title: Retrospect
+    height: 679.30
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463370/films/zhang/bw-5_o9vxaf.jpg
+    path: /portfolio/zhang
+    title: Beauty and Beauty
+    height: 674.40
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463120/films/youth/3_j5e10x.jpg
+    path: /portfolio/youth
+    title: Mutability
+    height: 679.41
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728462812/films/yang/4_oupclj.jpg
+    path: /portfolio/yang
+    title: Fafaia
+    height: 674.22
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466811/films/daily/cover_epvywh.jpg
+    path: /portfolio/daily
+    title: The Wayfarers
+    height: 675.17
+---
+<div class="photo-projects common-content">
+  {% for image in page.images %}
+    <div class="photo-project">
+      <a href="{{ image.path }}">
+        <canvas
+          class="image-placeholder"
+          width="550"
+          height="{{ image.height }}"
+          style="background-color: rgba(221, 220, 220, 0.7)"
+        ></canvas>
+        <img src="{{ image.image_path }}" alt="{{ image.title }}" class="lazyload img-lazyload"/>
+        <h4>{{ image.title }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,48 @@
+---
+layout: photos
+title: "Beauty and Beauty"
+permalink: /portfolio/zhang
+images:
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463369/films/zhang/bw-2_iq0cuc.jpg
+    height: 674.30
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463375/films/zhang/c-5_mwjnyj.jpg
+    height: 660.20
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463369/films/zhang/bw-4_p8qotm.jpg
+    height: 674.30
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463370/films/zhang/bw-5_o9vxaf.jpg
+    height: 674.40
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463376/films/zhang/c-6_fwldzp.jpg
+    height: 665.58
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463368/films/zhang/bw-1_rf1xit.jpg
+    height: 674.30
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463371/films/zhang/c-2_txm6eg.jpg
+    height: 667.75
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463372/films/zhang/c-3_kwm96z.jpg
+    height: 660.39
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463369/films/zhang/bw-3_ttdwhl.jpg
+    height: 674.30
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463370/films/zhang/c-1_ettjhw.jpg
+    height: 634.12
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463373/films/zhang/c-4_sk9pjt.jpg
+    height: 650.32
+---
+
+<div class="common-content">
+  <h4 class="portfolio-title">{{ page.title }}</h4>
+  <div class="photo-gallery">
+    {% for image in page.images %}
+    <div class="photo-gallery-item">
+      <div class="photo-gallery-item-container">
+        <canvas
+          class="image-placeholder"
+          width="550"
+          height="{{image.height}}"
+          style="background-color: rgba(221, 220, 220, 0.7)"
+        ></canvas>
+        <img src="{{ image.image_path }}" class="lazyload img-lazyload" />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+

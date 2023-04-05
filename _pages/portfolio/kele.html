@@ -1,0 +1,39 @@
+---
+layout: photos
+title: "The Way That Lovers Use"
+permalink: /portfolio/kele
+images:
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463207/films/kele/1_sje3ng.jpg
+    height: 665.32
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463209/films/kele/4_dhtjqx.jpg
+    height: 658.04
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463209/films/kele/5_khrqsg.jpg
+    height: 659.61
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463209/films/kele/6_lvrom6.jpg
+    height: 657.65
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463208/films/kele/2_mijyxi.jpg
+    height: 650.32
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463209/films/kele/7_vyb1qf.jpg
+    height: 653.00
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728463208/films/kele/3_yakxqo.jpg
+    height: 658.82
+---
+
+<div class="common-content">
+  <h4 class="portfolio-title">{{ page.title }}</h4>
+  <div class="photo-gallery">
+    {% for image in page.images %}
+    <div class="photo-gallery-item">
+      <div class="photo-gallery-item-container">
+        <canvas
+          class="image-placeholder"
+          width="550"
+          height="{{image.height}}"
+          style="background-color: rgba(221, 220, 220, 0.7)"
+        ></canvas>
+        <img src="{{ image.image_path }}" class="lazyload img-lazyload" />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
