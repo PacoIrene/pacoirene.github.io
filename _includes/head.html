@@ -1,0 +1,35 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#222" />
+  <meta name="author" content="PacoIrene">
+  <meta name="renderer" content="webkit">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700">
+
+  <!-- Favicon -->
+  <link href="{{ "/assets/favicon.ico" | relative_url }}" rel="shortcut icon"/>
+  <link rel="apple-touch-icon" sizes="48x48" href="{{ "/assets/touch-icon/48.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="96x96" href="{{ "/assets/touch-icon/92.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="192x192" href="{{ "/assets/touch-icon/192.png" | relative_url }}">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="{{ "/assets/manifest.json" | relative_url }}">
+
+  <!-- Google Analytics-->
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+  <script>
+    window.onload = function (event) {
+      var button = document.getElementById('menu-button');
+      button.addEventListener('click', function (event) {
+        var menu = document.getElementById('device-menu-list');
+        var displayStyle = menu.style.display;
+        menu.style.display = displayStyle === 'block' ? 'none' : 'block';
+      }, false);
+    }
+  </script>
+</head>

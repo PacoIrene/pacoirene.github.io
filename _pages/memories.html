@@ -1,0 +1,12 @@
+---
+layout: content
+title: "Memories"
+author: "Mark Chu"
+permalink: /memories
+---
+
+<section id="memory" class="common-content">
+  {% for post in site.posts %}
+    {% include post_item.html %}
+  {% endfor %}
+</section>

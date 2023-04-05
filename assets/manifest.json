@@ -1,0 +1,25 @@
+{
+  "short_name": "PacoIrene",
+  "name": "Mark Chu's Blog",
+  "icons": [
+    {
+      "src": "/assets/touch-icon/48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/assets/touch-icon/96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/assets/touch-icon/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#000"
+}

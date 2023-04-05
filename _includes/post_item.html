@@ -1,0 +1,7 @@
+<article class="memory-container">
+  <h3 class="memory-title"><a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h3>
+  <p class="create-time">{{ post.date | date: "%Y-%m-%d" }}</p>
+  <p class="memory-summary">
+    {{ post.content | strip_html | truncatewords: 30 }}
+  </p>
+</article>

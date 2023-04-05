@@ -1,0 +1,10 @@
+---
+layout: content
+---
+<article class="memory-page">
+  <h3 class="memory-title">{{ page.title }}</h3>
+  <p class="create-time">{{ page.date | date: "%Y-%m-%d" }}</p>
+  <div class="memory-article">
+    {{content}}
+  </div>
+</article>
