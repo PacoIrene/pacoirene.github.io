@@ -1,0 +1,18 @@
+---
+layout: content
+title: "Portfolio"
+author: "Mark Chu"
+permalink: /portfolio
+images:
+  - image_path: /assets/films/portra-400.jpg
+    title: Portra 400
+  - image_path: /assets/films/cinestill-800.jpg
+    title: CineStill 800
+---
+<div class="photo-gallery common-content">
+  {% for image in page.images %}
+    <div class="photo-gallery-image">
+      <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+    </div>
+  {% endfor %}
+</div>

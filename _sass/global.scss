@@ -191,34 +191,12 @@ ul#device-menu-list {
       letter-spacing: .3px;
     }
   }
-  #photos {
-    .photo-container {
-      width: 100%;
-      margin-top: 60px;
-      background-color: #eee;
-      opacity: 1;
-      transition: transform .4s, opacity .5s ease-in;
-    }
-    .fadeOut {
-      opacity: 0;
-    }
-    .photo-container:first-child {
-      margin-top: 0;
-    }
+  .photo-gallery-image {
+    display: inline-block;
     img {
-      z-index: 1;
-      width: 100%;
-      padding-top: 60px;
-    }
-    img:first-child {
-      padding-top: 0;
-    }
-    .film {
-      opacity: 0;
-      transition: transform .4s, opacity .5s ease-in;
-    }
-    .film.fadeIn {
-        opacity: 1;
+      cursor: pointer;
+      max-height: 80vh;
+      max-width: 80vw;
     }
   }
   #memory {

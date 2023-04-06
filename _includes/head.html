@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Moon+Dance:400,400i,700">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Favicon -->
   <link href="{{ "/assets/favicon.ico" | relative_url }}" rel="shortcut icon"/>
@@ -23,19 +25,56 @@
   <!-- Manifest -->
   <link rel="manifest" href="{{ "/assets/manifest.json" | relative_url }}">
 
+  <!-- Image Carousel -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
   <!-- Analytics-->
   {% if jekyll.environment == 'production' %}
   {% include analytics.html %}
   {% include jsError.html %}
   {% endif %}
   <script>
-    window.onload = function (event) {
+    document.addEventListener("DOMContentLoaded", function() {
+      // Add Nav Active Status
+      const pathName = location.pathname.split('/')[1];
+      const pathMap = {
+        '': 'home',
+        'memories': 'memory',
+        'memory': 'memory',
+        'portfolio': 'portfolio',
+        'about': 'about',
+      }
+      if (pathMap[pathName]) {
+        const node = document.getElementById('nav-' + pathMap[pathName]);
+        if (node) {
+          node.classList.add('active');
+        }
+      }
+
+      // Toggle Nav Bar
       var button = document.getElementById('menu-button');
       button.addEventListener('click', function (event) {
         var menu = document.getElementById('device-menu-list');
         var displayStyle = menu.style.display;
         menu.style.display = displayStyle === 'block' ? 'none' : 'block';
       }, false);
-    }
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.photo-gallery').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    $('.photo-gallery-image').click(function(e) {
+      e.preventDefault();
+      $('.photo-gallery').slick('slickNext');
+    });
+    });
   </script>
 </head>
