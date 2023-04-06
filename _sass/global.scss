@@ -191,12 +191,18 @@ ul#device-menu-list {
       letter-spacing: .3px;
     }
   }
-  .photo-gallery-image {
-    display: inline-block;
-    img {
-      cursor: pointer;
-      max-height: 80vh;
-      max-width: 80vw;
+  .photo-gallery {
+    margin-top: 60px;
+    .photo-gallery-image {
+      display: inline-block;
+      img {
+        cursor: pointer;
+        max-height: 60vh;
+        max-width: 80vw;
+      }
+    }
+    .slick-arrow {
+      display: none !important;
     }
   }
   #memory {
