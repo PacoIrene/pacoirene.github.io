@@ -23,9 +23,10 @@
   <!-- Manifest -->
   <link rel="manifest" href="{{ "/assets/manifest.json" | relative_url }}">
 
-  <!-- Google Analytics-->
-  {% if site.google_analytics and jekyll.environment == 'production' %}
+  <!-- Analytics-->
+  {% if jekyll.environment == 'production' %}
   {% include analytics.html %}
+  {% include jsError.html %}
   {% endif %}
   <script>
     window.onload = function (event) {
