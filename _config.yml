@@ -30,3 +30,6 @@ paginate:       5
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Show future post
+future: true
