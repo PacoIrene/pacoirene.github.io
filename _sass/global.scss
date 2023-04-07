@@ -170,16 +170,16 @@ ul#device-menu-list {
   .common-content {
     padding: 2rem;
   }
-  #poetry {
-    font-family: Arvo, Arial, Helvetica, sans-serif;
+  .poetry {
     margin-top: 170px;
     display: flex;
     justify-content: center;
+    font-family: Arvo, Arial, Helvetica, sans-serif;
     p {
       margin-top: 5px;
       text-align: left;
     }
-    & p:last-child {
+    & p.right {
       text-align: right;
     }
   }
