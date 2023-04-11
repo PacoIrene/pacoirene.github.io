@@ -1,12 +1,12 @@
 # Site settings
 title:          Mark Chu
 description:    "Mark's Mood"
-url:            "https://pacoirene.github.io/"
+url:            "https://pacoirene.github.io"
 
 # Author
 author:
   name:         Mark Chu
-  url:          https://pacoirene.github.io/
+  url:          https://pacoirene.github.io
 
 # Build settings
 markdown:       kramdown
