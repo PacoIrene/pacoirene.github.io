@@ -4,13 +4,13 @@ layout: content
 <div id="memory" class="common-content">
   <article class="memory-page">
     <h3 class="memory-title">{{ page.title }}</h3>
-    {% if post.noTime == true %}
-    <p class="create-time">{{ post.date | date: "%F" }}</p>
+    {% if page.noTime == true %}
+    <p class="create-time">{{ page.date | date: "%F" }}</p>
     {% else %}
-    <p class="create-time">{{ post.date | date: "%F %T" }}</p>
+    <p class="create-time">{{ page.date | date: "%F %T" }}</p>
     {% endif %}
     <div class="memory-article">
-      {{content}}
+      {{content | newline_to_br }}
     </div>
   </article>
 </div>
