@@ -6,6 +6,6 @@
   <p class="create-time">{{ post.date | date: "%F %T" }}</p>
   {% endif %}
   <p class="memory-summary">
-    {{ post.content | strip_html | truncatewords: 20 }}
+    {{ post.content | strip_html | truncate: 320 }}
   </p>
 </article>
