@@ -7,7 +7,8 @@ title: "Watching the Wheels"
 心情忐忑的打开邮箱
 刷新
 再刷新
-
+<br>
+<img alt="rain" src="/assets/posts/tree.jpg" style="max-width: 480px">
 <br>
 最近将很早之前在豆瓣上写的日记腾到了这里
 翻看以前的文字，显得十分的幼稚可笑
