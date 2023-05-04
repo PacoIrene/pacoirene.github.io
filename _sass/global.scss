@@ -39,6 +39,9 @@ a {
     margin-top: 3.75rem;
     margin-left: 0;
   }
+  .post-image {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 50rem) {
@@ -52,11 +55,17 @@ a {
   .content {
     margin-left: 250px;
   }
+  .post-image {
+    max-width: 480px;
+  }
 }
 
 @media screen and (min-width: 100rem) {
   #photos {
     width: 80rem;
+  }
+  .post-image {
+    max-width: 480px;
   }
 }
 
