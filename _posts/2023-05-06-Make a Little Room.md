@@ -4,7 +4,7 @@ date: "2023-05-06 18:21:34"
 title: "Make a Little Room"
 ---
 
-<img alt="foot" src="/assets/posts/score.jpg" class="post-image black"/>
+<img alt="foot" src="/assets/posts/live.jpg" class="post-image"/>
 <br>
 期待中的好消息或者说奇迹最终并没有发生
 显而易见的
