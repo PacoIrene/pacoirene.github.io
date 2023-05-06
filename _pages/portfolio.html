@@ -6,17 +6,21 @@ permalink: /portfolio
 images:
   - image_path: /assets/films/portra-400.jpg
     title: Portra 400
+    border: black
   - image_path: /assets/films/cinestill-800.jpg
     title: CineStill 800
+    border: white
   - image_path: /assets/films/ilford-400.jpg
     title: Ilford 400
+    border: white
   - image_path: /assets/films/adox-bw.jpg
     title: Adox Chrome
+    border: white
 ---
 <div class="photo-gallery common-content">
   {% for image in page.images %}
     <div class="photo-gallery-image">
-      <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+      <img src="{{ image.image_path }}" alt="{{ image.title }}"  class="{{ image.border }}"/>
     </div>
   {% endfor %}
 </div>
