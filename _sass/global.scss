@@ -1,5 +1,6 @@
 @import "./reset.scss";
 @import "./font.scss";
+@import "./media.scss";
 @import "./slick.scss";
 @import "./slick-theme.scss";
 @import "./image.scss";
@@ -16,55 +17,6 @@ a {
   color: #222;
   &:hover {
     color: #999;
-  }
-}
-@media screen and (max-width: 25rem) {
-  .content div.common-content {
-    padding: 40px;
-  }
-}
-
-@media screen and (max-width: 50rem) {
-  nav.normal {
-    display: none;
-  }
-  nav.device {
-    display: flex;
-  }
-  nav#device-menu-list {
-    display: block;
-  }
-  .content {
-    margin-top: 3.75rem;
-    margin-left: 0;
-  }
-  .post-image {
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 50rem) {
-  nav.normal {
-    display: block;
-  }
-  nav.device,
-  nav#device-menu-list {
-    display: none;
-  }
-  .content {
-    margin-left: 250px;
-  }
-  .post-image {
-    max-width: 400px;
-  }
-}
-
-@media screen and (min-width: 100rem) {
-  #photos {
-    width: 80rem;
-  }
-  .post-image {
-    max-width: 400px;
   }
 }
 nav {

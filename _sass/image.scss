@@ -1,11 +1,11 @@
 .post-image {
   padding: clamp(6px, 5%, 20px);
   padding-bottom: clamp(35px, 20%, 85px);
-  background-color: hsla(0, 0%, 90%, 1); /*background color*/
+  // background-color: hsla(0, 0%, 90%, 1); /*background color*/
   border: 1px solid;
   border-color: white hsla(0, 0%, 75%, 1) hsla(0, 0%, 80%, 1)
     hsla(0, 0%, 75%, 1); /*border colors (top / right / bottom / left )*/
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"%3E%3Cg fill="%239C92AC19" fill-opacity="0.5"%3E%3Cpath fill-rule="evenodd" d="M0 0h4v4H0V0zm4 4h4v4H4V4z"/%3E%3C/g%3E%3C/svg%3E'); /*background pattern*/
+  // background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"%3E%3Cg fill="%239C92AC19" fill-opacity="0.5"%3E%3Cpath fill-rule="evenodd" d="M0 0h4v4H0V0zm4 4h4v4H4V4z"/%3E%3C/g%3E%3C/svg%3E'); /*background pattern*/
   box-shadow: 0px 5px 5px hsla(0, 0%, 0%, 0.25),
     0px 5px 25px hsla(0, 0%, 0%, 0.2);
 }
