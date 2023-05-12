@@ -28,7 +28,7 @@ plugins:
 permalink:      /memory/:year-:month-:day/:title
 pagination:
   enabled: true
-  debug: true
+  debug: false
   per_page: 10
   permalink: '/:num/'
   title: ':title'
