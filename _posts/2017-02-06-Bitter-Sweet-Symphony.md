@@ -5,11 +5,8 @@ title: "Bitter Sweet Symphony"
 ---
 
 前些日子里，看网易云里歌单的时候看到了The Fray的Never say never
-
 就想到了以前也有在豆瓣fm上听过很多英文的摇滚乐
-
 脑子里浮现出了一张当时听到的专辑封面
-
 费了九牛二虎之力，找到了那首歌
 
 The Verve的Bitter Sweet Symphony
