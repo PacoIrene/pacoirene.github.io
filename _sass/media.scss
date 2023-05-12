@@ -75,8 +75,9 @@ $post-image-width: 400px;
       }
     }
   }
-  nav {
-    display: none;
+  nav,
+  .pagination {
+    display: none !important;
   }
   .post-image {
     max-width: $post-image-width;

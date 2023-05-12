@@ -1,6 +1,7 @@
 ---
 layout: content
 ---
+
 <div id="memory" class="common-content">
   <article class="memory-page">
     <h3 class="memory-title">{{ page.title }}</h3>
@@ -9,8 +10,19 @@ layout: content
     {% else %}
     <p class="create-time">{{ page.date | date: "%F %T" }}</p>
     {% endif %}
-    <div class="memory-article">
-      {{content | newline_to_br }}
-    </div>
+    <div class="memory-article">{{content | newline_to_br }}</div>
   </article>
+  <div class="pagination content-pagination">
+    {% if page.next.url %}
+    <a href="{{ page.next.url }}" class="left arrow">&#8592;</a>
+    {% else %}
+    <span class="left arrow">&#8592;</span>
+    {% endif %}
+    <span class="pagination-current">{{ site.posts | size }}&ensp;in total</span>
+    {% if page.previous.url %}
+    <a href="{{ page.previous.url }}" class="right arrow">&#8594;</a>
+    {% else %}
+    <span class="right arrow">&#8594;</span>
+    {% endif %}
+  </div>
 </div>

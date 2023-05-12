@@ -20,13 +20,20 @@ sass:
 
 # Gems
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-seo-tag
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
 permalink:      /memory/:year-:month-:day/:title
-paginate:       5
+pagination:
+  enabled: true
+  debug: true
+  per_page: 10
+  permalink: '/:num/'
+  title: ':title'
+  sort_field: 'date'
+  sort_reverse: true
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]

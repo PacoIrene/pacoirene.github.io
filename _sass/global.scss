@@ -4,6 +4,7 @@
 @import "./slick.scss";
 @import "./slick-theme.scss";
 @import "./image.scss";
+@import "./pagination.scss";
 
 html {
   font-size: 16px;
@@ -127,7 +128,7 @@ ul#device-menu-list {
 
 .content {
   height: 100%;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Noto Serif SC", Arial, Helvetica, sans-serif;
   .common-content {
     padding: 2rem;
@@ -147,7 +148,7 @@ ul#device-menu-list {
   }
   #about {
     p {
-      font-size: 12px;
+      font-size: 0.75rem;
       padding-top: 20px;
       line-height: 25px;
       letter-spacing: 0.3px;
@@ -170,17 +171,16 @@ ul#device-menu-list {
   #memory {
     .memory-container {
       margin-top: 40px;
-      margin-right: 20px;
     }
     .memory-container:first-child {
       margin-top: 20px;
     }
   }
   .memory-title {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .memory-summary {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 18px;
     margin-top: 10px;
     letter-spacing: 0.3px;
@@ -194,7 +194,7 @@ ul#device-menu-list {
     word-break: break-word;
   }
   .memory-article {
-    font-size: 12px;
+    font-size: 0.75rem;
     padding-top: 20px;
     padding-right: 20px;
     line-height: 0.5rem;
