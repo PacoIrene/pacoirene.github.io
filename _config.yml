@@ -36,7 +36,7 @@ pagination:
   sort_reverse: true
 
 # Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+exclude: [ Gemfile, Gemfile.lock, pacoirene.gemspec ]
 
 # Show future post
 future: true
