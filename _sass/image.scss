@@ -2,6 +2,7 @@
   padding: clamp(6px, 5%, 20px);
   padding-bottom: clamp(35px, 20%, 85px);
   background-color: hsla(0, 0%, 90%, 1); /*background color*/
+  border-radius: 2px;
   border: 1px solid;
   border-color: white hsla(0, 0%, 75%, 1) hsla(0, 0%, 80%, 1)
     hsla(0, 0%, 75%, 1); /*border colors (top / right / bottom / left )*/
