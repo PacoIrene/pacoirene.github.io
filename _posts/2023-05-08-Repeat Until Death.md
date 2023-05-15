@@ -4,7 +4,7 @@ date: "2023-05-08 18:19:23"
 title: "Repeat Until Death"
 ---
 
-<img alt="foot" src="/assets/posts/walk.jpg" class="post-image"/>
+<img alt="walk" src="/assets/posts/walk.jpg" class="post-image"/>
 
 昨天夜里两点钟，看了西汉姆和曼联的比赛
 出乎意料的，最终居然1:0赢下了比赛
