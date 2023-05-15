@@ -7,9 +7,9 @@ title: "Watching the Wheels"
 心情忐忑的打开邮箱
 刷新
 再刷新
-<br>
+
 <img alt="tree" src="/assets/posts/tree.jpg" class="post-image"/>
-<br>
+
 最近将很早之前在豆瓣上写的日记腾到了这里
 翻看以前的文字，显得十分的幼稚可笑
 还多多少少带有那个时代的印记

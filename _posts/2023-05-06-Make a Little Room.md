@@ -5,7 +5,7 @@ title: "Make a Little Room"
 ---
 
 <img alt="live" src="/assets/posts/live.jpg" class="post-image"/>
-<br>
+
 期待中的好消息或者说奇迹最终并没有发生
 显而易见的
 自己说服自己了也好
