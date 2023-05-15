@@ -5,6 +5,3 @@ layout: null
 User-agent: *
 Sitemap: https://pacoirene.github.io/sitemap.xml
 # Crawl-delay: 5
-
-User-agent: DotBot
-Disallow: /
