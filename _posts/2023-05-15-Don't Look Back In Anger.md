@@ -3,7 +3,7 @@ layout: post
 date: "2023-05-15 12:15:16"
 title: "Don't Look Back In Anger"
 ---
-此时此刻，我正在听羊毛とおはな的《Don't Look Back In Anger》
+此时此刻，耳机里再一次听到了羊毛とおはな的《Don't Look Back In Anger》
 千葉小姐的声音非常的特别
 不过也已经去世8年多了吧
 是从大学时期就很喜欢的歌手了
