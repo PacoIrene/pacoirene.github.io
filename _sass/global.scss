@@ -1,17 +1,21 @@
 @import "./reset.scss";
-@import "./font.scss";
 @import "./media.scss";
 @import "./slick.scss";
 @import "./slick-theme.scss";
 @import "./image.scss";
 @import "./pagination.scss";
 
+$main-font: Crimson Text, serif;
+$poetry-font: Arvo, serif;
+$logo-font: Caveat, Arvo, serif;
+$post-font: "Noto Serif SC", serif;
+
 html {
   font-size: 16px;
 }
 body {
   background: #fff;
-  font-family: Arvo, Arial, Helvetica, sans-serif;
+  font-family: $main-font
 }
 
 a {
@@ -30,9 +34,9 @@ nav {
 
 nav.device a.logo,
 nav.normal a.logo {
-  font-family: Caveat, Arvo, Arial, Helvetica, sans-serif;
+  font-family: $logo-font;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 nav.normal a.logo {
@@ -76,9 +80,9 @@ nav.normal {
   box-sizing: border-box;
   a {
     display: block;
-    margin-top: 10px;
+    margin-top: 8px;
     color: #222;
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     &:hover {
       color: #999;
     }
@@ -97,6 +101,7 @@ nav.normal.link {
   a {
     font-size: 0.75rem;
     color: #999;
+    margin-top: 5px;
     &:hover {
       color: #222;
     }
@@ -126,7 +131,7 @@ ul#device-menu-list {
 .content {
   height: 100%;
   font-size: 1rem;
-  font-family: "Noto Serif SC", Arial, Helvetica, sans-serif;
+  font-family: $post-font;
   .common-content {
     padding: 2rem;
   }
@@ -134,7 +139,7 @@ ul#device-menu-list {
     margin-top: 120px;
     display: flex;
     justify-content: center;
-    font-family: Arvo, Arial, Helvetica, sans-serif;
+    font-family: $poetry-font;
     p {
       margin-top: 5px;
       text-align: left;
