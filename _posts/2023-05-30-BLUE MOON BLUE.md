@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2023-05-30"
+date: "2023-05-30 18:06:00"
 title: "BLUE MOON BLUE"
 ---
 <img alt="dust" src="/assets/posts/dust.jpg" class="post-image black"/>
