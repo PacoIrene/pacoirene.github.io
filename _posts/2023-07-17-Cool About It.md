@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2023-07-17"
+date: "2023-07-17 17:52:11"
 title: "Cool About It"
 ---
 
