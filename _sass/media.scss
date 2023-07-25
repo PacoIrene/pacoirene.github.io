@@ -43,11 +43,17 @@ $post-image-width: 400px;
   }
   .content {
     margin-left: 200px;
+    .poetry {
+      margin-left: -200px;
+    }
   }
 }
 @media screen and (min-width: 60rem) {
   .content {
     margin-left: 250px;
+    .poetry {
+      margin-left: -250px;
+    }
   }
 }
 
