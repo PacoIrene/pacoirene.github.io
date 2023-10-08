@@ -20,7 +20,8 @@ $post-image-width: 400px;
     margin-top: 3.75rem;
     margin-left: 0;
   }
-  .post-image {
+  .post-image,
+  .spotify-block {
     max-width: 100%;
   }
 }
@@ -33,7 +34,8 @@ $post-image-width: 400px;
   nav#device-menu-list {
     display: none;
   }
-  .post-image {
+  .post-image,
+  .spotify-block {
     max-width: $post-image-width;
   }
 }
@@ -63,7 +65,8 @@ $post-image-width: 400px;
   #photos {
     width: 80rem;
   }
-  .post-image {
+  .post-image,
+  .spotify-block {
     max-width: $post-image-width;
   }
 }
