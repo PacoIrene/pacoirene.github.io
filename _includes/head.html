@@ -29,6 +29,15 @@
 
   <!-- Manifest -->
   <link rel="manifest" href="{{ "/assets/manifest.json" | relative_url }}">
+  <!-- Google -->
+  <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "Mark Chu",
+      "url" : "https://pacoirene.github.io/"
+    }
+  </script>
 
   <!-- Analytics-->
   {% if jekyll.environment == 'production' %} {% include analytics.html %} {%
