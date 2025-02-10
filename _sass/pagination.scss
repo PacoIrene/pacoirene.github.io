@@ -3,8 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2.5rem;
-  padding: 1.5rem 0.5rem 0;
-  border-top: 1px solid #eee;
+  padding: 1.5rem 0 0;
   font-size: 0.75rem;
   span.arrow {
     color: #999;
@@ -12,8 +11,4 @@
   .pagination-current {
     color: #333;
   }
-}
-
-.pagination.content-pagination {
-  border: none;
 }

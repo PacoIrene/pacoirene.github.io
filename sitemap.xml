@@ -27,11 +27,18 @@ layout: null
             </url>
         {% endunless %}
     {% endfor %}
-    <url>
-        <loc>{{ site.url }}/memories</loc>
-        <priority>1.0</priority>
-        <changefreq>daily</changefreq>
-    </url>
+    {% assign page_size = site.posts.size | divided_by: 10.0 | ceil %}
+    {% for i in (1..page_size) %}
+        <url>
+        {% if i == 1 %}
+            <loc>{{ site.url }}/memories</loc>
+        {% else %}
+            <loc>{{ site.url }}/memories/{{ i }}</loc>
+        {% endif %}
+            <priority>1.0</priority>
+            <changefreq>daily</changefreq>
+        </url>
+    {% endfor %}
     <url>
         <loc>{{ site.url }}/portfolio</loc>
         <priority>1.0</priority>
