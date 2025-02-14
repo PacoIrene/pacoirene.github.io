@@ -4,12 +4,12 @@ date: "2017-02-06 22:56:35"
 title: "Bitter Sweet Symphony"
 ---
 
-前些日子里，看网易云里歌单的时候看到了The Fray的Never say never
+前些日子里，看网易云里歌单的时候看到了The Fray的“Never say never”
 就想到了以前也有在豆瓣fm上听过很多英文的摇滚乐
 脑子里浮现出了一张当时听到的专辑封面
 费了九牛二虎之力，找到了那首歌
 
-The Verve的Bitter Sweet Symphony
+The Verve的“Bitter Sweet Symphony”
 
 当然 这首歌的MV也非常的精彩
 
