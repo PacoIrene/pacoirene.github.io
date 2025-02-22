@@ -5,6 +5,7 @@
 
 $main-font: Crimson Text, serif;
 $poetry-font: Arvo, serif;
+$en-font: f"Noto Serif", serif;
 $logo-font: Hurricane, serif;
 $post-font: "Noto Serif SC", serif;
 $content-max-width: 960px;
@@ -249,10 +250,9 @@ nav.normal {
     word-wrap: break-all;
     p {
       line-height: 1.4rem;
-    }
-    span.en {
-      font-family: $main-font;
-      font-size: 0.85rem;
+      span.en {
+        font-family: $en-font
+      }
     }
   }
 }
