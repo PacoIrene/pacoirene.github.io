@@ -249,6 +249,10 @@ nav.normal {
     word-wrap: break-all;
     p {
       line-height: 1.4rem;
+
+      .en {
+        font-family: $main-font;
+      }
     }
   }
 }
