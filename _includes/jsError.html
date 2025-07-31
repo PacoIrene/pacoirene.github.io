@@ -1,4 +1,19 @@
-<script src="//d2wy8f7a9ursnm.cloudfront.net/v7/bugsnag.min.js"></script>
+<script src="//d2wy8f7a9ursnm.cloudfront.net/v8/bugsnag.min.js"></script>
 <script>
-  var paco_user=localStorage.getItem("user")||Math.random().toString(24).substring(4);localStorage.setItem("user",paco_user),Bugsnag.start({apiKey:"dfc51067055b026d2330cc3da9e6926e",user:{id:paco_user},onError:function(e){e.addMetadata("DInfo",{referrer:document.referrer,platform:navigator.platform,agentData:JSON.stringify(navigator.userAgentData||{}),size:{width:window.screen.width,height:window.screen.height}})}}),Bugsnag.notify(new Error("The Page view"));
+  var paco_user =
+    localStorage.getItem("user") || Math.random().toString(24).substring(4);
+  localStorage.setItem("user", paco_user),
+    Bugsnag.start({
+      apiKey: "d0649119565c25071dab7e5c8493156b",
+      user: { id: paco_user },
+      onError: function (e) {
+        e.addMetadata("DInfo", {
+          referrer: document.referrer,
+          platform: navigator.platform,
+          agentData: JSON.stringify(navigator.userAgentData || {}),
+          size: { width: window.screen.width, height: window.screen.height },
+        });
+      },
+    }),
+    Bugsnag.notify(new Error("The Page view"));
 </script>
