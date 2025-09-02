@@ -7,8 +7,11 @@ $main-font: Crimson Text, serif;
 $poetry-font: Arvo, serif;
 $en-font: "Noto Serif", serif;
 $cn-font: "Noto Serif SC", serif;
+$kr-font: "Noto Serif KR", serif;
 $logo-font: Hurricane, serif;
-$post-font: "Noto Serif", "Noto Serif SC", "Noto Serif JP", serif;
+$post-font: "Noto Serif", "Noto Serif SC", "Noto Serif KR", "Noto Serif JP",
+  serif;
+$post-title-font: "Noto Serif SC", "Noto Serif KR", "Noto Serif JP", serif;
 $content-max-width: 960px;
 $photo-content-max-width: 1200px;
 $main-font-color: #222;
@@ -225,7 +228,7 @@ nav.normal {
   }
   .memory-title {
     font-size: 0.85rem;
-    font-family: $cn-font;
+    font-family: $post-title-font;
   }
   .memory-summary {
     font-size: 0.7rem;
@@ -237,7 +240,7 @@ nav.normal {
     color: #999;
     padding: 3px 0;
     font-size: 0.75rem;
-    font-family: $cn-font;
+    font-family: $en-font;
   }
   .memory-page {
     word-break: break-word;
