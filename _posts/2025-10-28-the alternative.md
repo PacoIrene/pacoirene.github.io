@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2025-10-28"
+date: "2025-10-28 10:31:30"
 title: "the alternative"
 ---
 也是很久很久未在这里写东西了
