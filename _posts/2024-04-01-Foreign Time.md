@@ -10,14 +10,14 @@ title: "Foreign Time"
 看了部电影
 “无敌幸运星”
 
-无所事事的就要度过一天
+无所事事地就要度过一天
 晚上洗了澡
 本想看看山东和申花的比赛
 然后打发掉整个夜晚
 
 <img alt="Foot" src="https://res.cloudinary.com/dti7bslai/image/upload/v1728468168/posts/daily/foot-2_q01lsh.jpg" class="post-image black"/>
 
-却还是在抹不开面子，拒绝别人的前提下
+却还是在抹不开面子，无法拒绝别人的前提下
 被推着往前走
 在西营盘碰头后
 去了corks
