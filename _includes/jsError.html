@@ -2,15 +2,16 @@
 <script type="text/javascript" src="{{ "/assets/js/webgl-fingerprint.js" | relative_url }}"></script>
 <script>
   var printWebGLFingerprint = getWebGLFingerprint();
+  var fingerprint = (printWebGLFingerprint && printWebGLFingerprint.hash) || '';
   var paco_user =
     localStorage.getItem("user") || Math.random().toString(24).substring(4);
   localStorage.setItem("user", paco_user),
     Bugsnag.start({
       apiKey: "d0649119565c25071dab7e5c8493156b",
-      user: { id: paco_user },
+      user: { id: fingerprint || paco_user },
       onError: function (e) {
         e.addMetadata("DInfo", {
-          fingerprint: (printWebGLFingerprint && printWebGLFingerprint.hash) || '',
+          fingerprint: fingerprint,
           referrer: document.referrer,
           platform: navigator.platform,
           agentData: JSON.stringify(navigator.userAgentData || {}),
