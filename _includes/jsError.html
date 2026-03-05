@@ -1,5 +1,7 @@
 <script src="//d2wy8f7a9ursnm.cloudfront.net/v8/bugsnag.min.js"></script>
+<script type="text/javascript" src="{{ "/assets/js/webgl-fingerprint.js" | relative_url }}"></script>
 <script>
+  var printWebGLFingerprint = getWebGLFingerprint();
   var paco_user =
     localStorage.getItem("user") || Math.random().toString(24).substring(4);
   localStorage.setItem("user", paco_user),
@@ -8,6 +10,7 @@
       user: { id: paco_user },
       onError: function (e) {
         e.addMetadata("DInfo", {
+          fingerprint: (printWebGLFingerprint && printWebGLFingerprint.hash) || '',
           referrer: document.referrer,
           platform: navigator.platform,
           agentData: JSON.stringify(navigator.userAgentData || {}),
