@@ -1,0 +1,63 @@
+---
+layout: photos
+title: "Day That I Have Loved"
+permalink: /portfolio/way
+images:
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1785027621/films/daily/IMG_1400_ywtcnp.jpg
+    height: 687.5
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466802/films/daily/43_xzjqpw.jpg
+    height: 825.00
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466791/films/daily/35_d1kzux.jpg
+    height: 825.10
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466792/films/daily/36_rosb4o.jpg
+    height: 825.00
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466805/films/daily/45_gqmcby.jpg
+    height: 366.75
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466793/films/daily/37_whlcfx.jpg
+    height: 366.67
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466780/films/daily/29_egqxo2.jpg
+    height: 375.01
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466806/films/daily/46_jjxeiv.jpg
+    height: 825.00
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466784/films/daily/30_vwouov.jpg
+    height: 375.07
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466809/films/daily/48_eecker.jpg
+    height: 824.89
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466794/films/daily/33_zg71ql.jpg
+    height: 825.00
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466808/films/daily/47_wrpler.jpg
+    height: 366.67
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466799/films/daily/41_vrdeow.jpg
+    height: 824.90
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466796/films/daily/39_asxxg1.jpg
+    height: 366.67
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466793/films/daily/38_rdihtw.jpg
+    height: 366.73
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466800/films/daily/42_qic8pw.jpg
+    height: 366.67
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466803/films/daily/44_cxcgoq.jpg
+    height: 824.90
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1728466798/films/daily/40_ku4r4y.jpg
+    height: 825.00
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1780417074/films/daily/IMG_1770_z2ooex.jpg
+    height: 440.12
+---
+
+<div class="common-content">
+  <h4 class="portfolio-title">{{ page.title }}</h4>
+  <div class="photo-gallery">
+    {% for image in page.images %}
+    <div class="photo-gallery-item">
+      <div class="photo-gallery-item-container">
+        <canvas
+          class="image-placeholder"
+          width="550"
+          height="{{image.height}}"
+          style="background-color: rgba(221, 220, 220, 0.7)"
+        ></canvas>
+        <img src="{{ image.image_path }}" class="lazyload img-lazyload" />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
