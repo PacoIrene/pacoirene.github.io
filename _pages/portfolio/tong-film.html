@@ -1,0 +1,37 @@
+---
+layout: photos
+title: "Dust"
+permalink: /portfolio/tong-film
+images:
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1786530950/films/tong-film/IMG_4226_uwkfjs.jpg
+    height: 676.75
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1786530949/films/tong-film/IMG_4221_accdy1.jpg
+    height: 685.54
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1786530947/films/tong-film/IMG_4236_yxnyy9.jpg
+    height: 693.33
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1786530945/films/tong-film/IMG_4220_raewky.jpg
+    height: 682.319
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1786530943/films/tong-film/IMG_4222_z1xb4n.jpg
+    height: 676.239
+  - image_path: https://res.cloudinary.com/dti7bslai/image/upload/v1786530938/films/tong-film/IMG_4216_p0stoe.jpg
+    height: 675.81
+---
+
+<div class="common-content">
+  <h4 class="portfolio-title">{{ page.title }}</h4>
+  <div class="photo-gallery">
+    {% for image in page.images %}
+    <div class="photo-gallery-item">
+      <div class="photo-gallery-item-container">
+        <canvas
+          class="image-placeholder"
+          width="550"
+          height="{{image.height}}"
+          style="background-color: rgba(221, 220, 220, 0.7)"
+        ></canvas>
+        <img src="{{ image.image_path }}" class="lazyload img-lazyload" />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
